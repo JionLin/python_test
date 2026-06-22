@@ -11,3 +11,4 @@
 #
 # 将组长打好的包安装到pycharm中，并创建测试模块，创建一个车对象，并调用start和stop方法。
 
+# 见 vehicle 文件夹和 day03test.py 文件
