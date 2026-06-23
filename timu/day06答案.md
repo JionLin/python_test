@@ -24,7 +24,8 @@ print(f"3 + 5 = {result_add}")
 print(f"3 * 5 = {result_multiply}")
 ```
 
-**分析**：在math_operations.py模块中定义了add和multiply两个函数。在main.py文件中，使用import语句导入math_operations模块，然后通过模块名.函数名的方式调用模块中的函数进行计算，并打印结果，展示了模块的定义和使用过程。
+**分析**：在math_operations.py模块中定义了add和multiply两个函数。在main.py文件中，
+使用import语句导入math_operations模块，然后通过模块名.函数名的方式调用模块中的函数进行计算，并打印结果，展示了模块的定义和使用过程。
 
 2. 使用生成器表达式创建一个生成器，生成 1 到 10 的偶数。然后使用for循环遍历该生成器，打印每个偶数。
 
