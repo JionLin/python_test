@@ -3,7 +3,14 @@
 # print('尚硅谷', end='')
 
 # for循环实现九九乘法表
-for row in range(1, 10):
-    for item in range(1, row + 1):
-        print(f'{item}*{row}={item * row}', end='\t')
+# for row in range(1, 10):
+#     for item in range(1, row + 1):
+#         print(f'{item}*{row}={item * row}', end='\t')
+#     print()
+
+
+
+for i in range(1,10):
+    for j in range(1,i+1):
+        print(f'{i}*{j}={i*j}',end='\t')
     print()
