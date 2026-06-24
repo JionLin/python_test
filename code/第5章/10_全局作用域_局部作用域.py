@@ -11,12 +11,12 @@ def test():
     print('函数中的打印（b）', b)
     print('函数中的打印（c）', c)
     print('函数中的打印（d）', d)
-test()
-print('***************')
-print('全局的打印（a）', a)
-print('全局的打印（b）', b)
-print(c)
-print(d)
+# test()
+# print('***************')
+# print('全局的打印（a）', a)
+# print('全局的打印（b）', b)
+# print(c)
+# print(d)
 
 
 # 局部作用域 和 局部变量，会在函数调用时创建，在函数执行结束后自动销毁
@@ -30,12 +30,12 @@ print(d)
 
 
 # 全局作用域 与 全局变量，会在程序开始时创建，在程序结束后销毁
-# n = 100
-# def test3():
-#     global n
-#     n += 1
-#     print(f'我是test3函数中打印的n：{n}')
-# test3()
-# test3()
-# test3()
-# print(n)
+n = 100
+def test3():
+    global n
+    n += 1
+    print(f'我是test3函数中打印的n：{n}')
+test3()
+test3()
+test3()
+print(n)

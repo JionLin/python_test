@@ -9,4 +9,4 @@ def greet(name, gender, age, height, msg='你好', /):
 # greet('张三', '男', 18, 172, msg='hello')
 
 # print函数底层给end参数设置了默认值
-print('尚硅谷', end='!!')
+# print('尚硅谷', end='!!')

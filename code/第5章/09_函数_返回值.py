@@ -9,5 +9,5 @@ result = add(100, 200)
 print(result)
 
 # print函数是没有返回值的
-# res = print('hello')
-# print(res)
+res = print('hello')
+print(res)
