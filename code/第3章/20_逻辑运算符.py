@@ -7,8 +7,8 @@
 # print(8 > 7 and 2 > 3)
 # print(2 > 3 and 8 > 7)
 # print(2 > 3 and 2 > 3)
-
-# and具备“逻辑短路”能力
+#
+# # and具备“逻辑短路”能力
 # print(False and 3 / 0)
 # print(3 > 9 and 3 / 0)
 
@@ -52,6 +52,7 @@
 # not返回的值，一定是布尔值！
 print(not 0)
 print(not 3 > 2)
+# // 取整
 print(not 9 // 4)
 print(not 'abc')
 print(9 //4)

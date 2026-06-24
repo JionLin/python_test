@@ -13,3 +13,5 @@ info2 = '我叫%s，我是%s生，我体重是%d，年龄是%d' % (name, gender,
 # 写法三：使用f-string，是目前Python最推荐的方式。
 info3 = f'我叫{name}，我是{gender}生，我体重是{weight}，年龄是{age}'
 print(info3)
+
+info4 =f'我是{name}'

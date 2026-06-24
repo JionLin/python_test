@@ -12,6 +12,8 @@ d = 7 < 2
 # 布尔类型是int类型的子类型，底层的本质是用1表示True，用0表示False
 # print(int(True))
 # print(int(False))
+# print(int(True))
+# print(int(False))
 
 # print(4 + True)
 # print(8 - False)
@@ -32,6 +34,7 @@ d = 7 < 2
 # print(bool(1.8e3))
 # print(bool(12_000))
 # print(bool(-10))
+print(bool(0))
 
 # Python中除空字符串以外的任何字符串，转为布尔值都是True
 print(bool('hello'))

@@ -14,13 +14,13 @@
 # result2 = int('79')
 # result3 = int('   79   ')
 # result4 = int(48)
-
-# 以下是错误示例
-# int('   7 9   ')
-# int('你好')
-# int('79个')
-# int('15.6')
-
+#
+# # 以下是错误示例
+# # int('   7 9   ')
+# # int('你好')
+# # int('79个')
+# # int('15.6')
+#
 # print(type(result1),result1)
 # print(type(result2),result2)
 # print(type(result3),result3)
