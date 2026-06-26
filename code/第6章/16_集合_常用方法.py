@@ -9,11 +9,11 @@
 
 # 集合A.difference_update(集合B)：
 # 作用：从集合A中，删除集合B中存在的元素（集合A会被修改，集合B不会）
-# s1 = {10, 20, 30, 40, 50}
-# s2 = {30, 40, 50, 60, 70}
-# s1.difference_update(s2)
-# print(s1)
-# print(s2)
+s1 = {10, 20, 30, 40, 50}
+s2 = {30, 40, 50, 60, 70}
+s1.difference_update(s2)
+print(s1)
+print(s2)
 
 
 # 集合A.union(集合B)：
@@ -46,8 +46,8 @@
 # 集合A.isdisjoint(集合B)：
 # 作用：判断集合A和集合B是否没有交集
 # 如果没有交集，返回True；只要有一个公共元素，就返回False
-s1 = {10, 20, 30, 40, 50}
-s2 = {30, 40, 50, 60, 70}
-s3 = {80, 90}
-result = s1.isdisjoint(s2)
-print(result)
+# s1 = {10, 20, 30, 40, 50}
+# s2 = {30, 40, 50, 60, 70}
+# s3 = {80, 90}
+# result = s1.isdisjoint(s2)
+# print(result)
