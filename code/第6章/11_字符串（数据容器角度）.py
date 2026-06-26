@@ -14,7 +14,7 @@
 
 # 常用方法
 # index 方法：获取指定字符，在字符串中第一次出现的下标
-# msg = 'welcome to atguigu'
+# msg = 'wetlcome to atguigu'
 # result = msg.index('t')
 # print(result)
 
@@ -42,12 +42,12 @@
 
 # strip 方法：从某个字符串中删除：指定字符串中的任意字符
 # 规则：从字符串两端开始删除，直到遇到第一个不在字符串中的字符就停下
-# msg = '666尚6硅6谷666'
+# msg = '1666尚6硅6谷6662'
 # result = msg.strip('6')
 # print(msg)
 # print(result)
 
-# msg = '1234尚12硅34谷4321'
+# msg = '12354尚12硅34谷43251'
 # result = msg.strip('1324')
 # print(msg)
 # print(result)
@@ -77,5 +77,5 @@ msg = 'welcome to atguigu'
 #     index += 1
 
 # for循环遍历
-# for item in msg:
-#     print(item)
+for item in msg:
+    print(item)

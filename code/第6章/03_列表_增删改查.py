@@ -1,19 +1,25 @@
 # 新增操作
 # 方式一：通过列表的append方法，在列表尾部追加一个元素
-nums = [10, 20, 30, 40]
-nums.append(50)
-print(nums)
+# nums = [10, 20, 30, 40]
+# nums.append(50)
+# print(nums)
+#
+# nums.append(100)
+# print(nums)
 
 # 方式二：通过列表的insert方法，在列表的指定下标处添加一个元素
 # nums = [10, 20, 30, 40]
 # nums.insert(2, 666)
 # print(nums)
-
+# nums.insert(3, 888)
+# print(nums)
 # 方式三：通过列表的extend方法，将可迭代对象中的内容依次取出，追加到列表尾部
 # nums = [10, 20, 30, 40]
 # nums.extend('尚硅谷')
 # nums.extend(range(1, 4))
 # nums.extend([70, 80, 90])
+# print(nums)
+# nums.extend('你好啊')
 # print(nums)
 
 # 删除操作
@@ -25,7 +31,7 @@ print(nums)
 
 # 方式二：通过列表的remove方法，删除列表中第一次出现的指定值
 # nums = [10, 20, 10, 40, 50]
-# nums.remove(10)
+# nums.remove(20)
 # print(nums)
 
 # 方式三：通过列表的clear方法，删除列表中所有的元素（清空列表）
@@ -35,7 +41,7 @@ print(nums)
 
 # 方式四：通过del关键字，删除指定元素
 # nums = [10, 20, 10, 40, 50]
-# del nums[3]
+# del nums[2]
 # print(nums)
 
 # 修改操作
@@ -44,5 +50,5 @@ print(nums)
 # print(nums)
 
 # 查询操作
-# nums = [10, 20, 10, 40, 50]
-# print(nums[3])
+nums = [10, 20, 10, 40, 50]
+print(nums[3])
