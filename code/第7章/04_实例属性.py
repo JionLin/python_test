@@ -14,5 +14,7 @@ p1 = Person('张三', 18, '男')
 p2 = Person('李四', 22, '女')
 
 # 实例属性只能通过实例访问，不能通过类访问
-# print(p1.name)
+print(p1.name)
+age=p1.age
+print(age)
 # print(Person.name)

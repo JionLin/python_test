@@ -5,6 +5,7 @@ class Person:
     # 类属性通常用于保存：公共数据
     max_age = 120
     planet = '地球'
+    phone='苹果'
 
     # 初始化方法
     def __init__(self, name, age, gender):
@@ -19,11 +20,11 @@ class Person:
             self.age = Person.max_age
 
 # 验证一下：类属性是保存在类身上的
-# print(Person.__dict__)
+print(Person.__dict__)
 
 # 创建Person类的实例对象
-p1 = Person('张三', 18, '男')
-p2 = Person('李四', 22, '女')
+# p1 = Person('张三', 18, '男')
+# p2 = Person('李四', 22, '女')
 
 # 验证一下：实例身上是没有类属性的
 # print(p1.__dict__)
@@ -40,9 +41,9 @@ p2 = Person('李四', 22, '女')
 # print(p3.__dict__)
 
 # 注意点：进行【实例.属性名 = 值】操作时，只会对实例自身的属性起作用，不会影响类属性
-p1.planet = '火星'
-print(Person.__dict__)
-print(p1.__dict__)
-print(p2.__dict__)
-print(p1.planet)
-print(p2.planet)
+# p1.planet = '火星'
+# print(Person.__dict__)
+# print(p1.__dict__)
+# print(p2.__dict__)
+# print(p1.planet)
+# print(p2.planet)

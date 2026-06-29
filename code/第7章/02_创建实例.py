@@ -11,8 +11,11 @@ p1 = Person('张三', 18, '男')
 p2 = Person('李四', 22, '女')
 
 # 如果直接打印一个实例的话，我们是看不到实例身上的属性的
-# print(p1)
-# print(p2)
+print(p1)
+print(p2)
+p2.age = 18
+print(p1.__dict__)
+print(p2.__dict__)
 
 # 通过点语法可以访问或修改实例身上的属性
 # print(p1.name)
@@ -34,5 +37,5 @@ p2 = Person('李四', 22, '女')
 # print(p1.__dict__)
 
 # 通过type函数，可以查看某个实例对象，是由哪个类创建出来的
-# print(type(p1))
-# print(type(p2))
+print(type(p1))
+print(type(p2))
