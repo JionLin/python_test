@@ -9,6 +9,8 @@
 # print(type(res2), res2)
 # print(type(res3), res3)
 # print(type(res4), res4)
+# res5=list({'hh':'哈哈'}.items())
+# print(type(res5), res5)
 
 # 2.tuple 函数：1.定义空元组。2.将【可迭代对象】转换为元组
 # res1 = tuple(range(8))
@@ -19,6 +21,9 @@
 # print(type(res2), res2)
 # print(type(res3), res3)
 # print(type(res4), res4)
+#
+# res5=tuple({11,22,334,55})
+# print(type(res5), res5)
 
 # 3.set 函数：1.定义空集合。2.将【可迭代对象】转换为集合
 # res1 = set(range(8))
@@ -29,6 +34,9 @@
 # print(type(res2), res2)
 # print(type(res3), res3)
 # print(type(res4), res4)
+#
+# res5=set({22,33,44})
+# print(type(res5), res5)
 
 
 # 4.str 函数：1.定义空字符串。2.将【任意类型】转换为字符串
@@ -45,29 +53,34 @@
 # print(type(res4), res4)
 # print(type(res5), res5)
 # print(type(res6), res6)
-# print(type(res6), res6)
 # print(type(res7), res7)
+#
+# res8=str('1')
+# print(type(res8), res8)
 
 # 5.dict 函数：1.定义空字典。2.将【可迭代对象】转换为字典
 # 备注：交给dict函数的内容必须是键值对才可以，否则就会报错
-# res1 = dict({'张三': 75, '李四': 60, '王五':85})
-# res2 = dict([('张三', 75), ('李四', 60), ('王五', 85)])
-# res3 = dict((('张三', 75), ('李四', 60), ('王五', 85)))
-# res4 = dict({('张三', 75), ('李四', 60), ('王五', 85)})
-# print(type(res1), res1)
-# print(type(res2), res2)
-# print(type(res3), res3)
-# print(type(res4), res4)
+res1 = dict({'张三': 75, '李四': 60, '王五':85})
+res2 = dict([('张三', 75), ('李四', 60), ('王五', 85)])
+res3 = dict((('张三', 75), ('李四', 60), ('王五', 85)))
+res4 = dict({('张三', 75), ('李四', 60), ('王五', 85)})
+print(type(res1), res1)
+print(type(res2), res2)
+print(type(res3), res3)
+print(type(res4), res4)
+
+res5=dict({"name":'johnny','age':'18'})
+print(type(res5),res5)
 
 # 所有的数据容器，都支持【成员运算符】： in / not in  作用：判断某个“元素”是否在于容器中。
-hobby = ['抽烟', '喝酒', '烫头']
-nums = (10, 20, 30, 40, 50)
-message = 'hello,atgiugu'
-citys = {'北京', '天津', '上海', '重庆'}
-score = {'张三': 75, '李四': 60, '王五':85}
-
-print('喝酒' not in hobby)
-print(20 not in nums)
-print('hel' not in message)
-print('上海' not in citys)
-print('李华' not in score)
+# hobby = ['抽烟', '喝酒', '烫头']
+# nums = (10, 20, 30, 40, 50)
+# message = 'hello,atgiugu'
+# citys = {'北京', '天津', '上海', '重庆'}
+# score = {'张三': 75, '李四': 60, '王五':85}
+#
+# print('喝酒' not in hobby)
+# print(20 not in nums)
+# print('hel' not in message)
+# print('上海' not in citys)
+# print('李华' not in score)
