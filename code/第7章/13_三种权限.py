@@ -20,3 +20,19 @@ p1 = Person('张三', 18, '110101199001011234')
 # Python底层是通过重命名的方式，实现私有属性的
 # print(p1.__dict__)
 # print(p1._Person__idcard)
+
+class Teacher(Person):
+    def __init__(self, name, age, idcard):
+        Person.__init__(self, name, age, idcard)
+
+    def sayhello(self):
+        print(f'我是{self.name},我的年龄是{self._age}')
+        # print(f'我是{self.name},我的年龄是{self._age},身份证是{self.__idcard}')
+
+
+t1=Teacher('leisi',18,'23234')
+t1.sayhello()
+
+print(t1.__dict__)
+
+

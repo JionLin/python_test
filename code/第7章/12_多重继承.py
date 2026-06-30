@@ -16,8 +16,8 @@ class Worker:
 
 class Student(Worker, Person):
     def __init__(self, name, age, gender, company, stu_id, grade):
-        Person.__init__(self, name, age, gender)
         Worker.__init__(self, company)
+        Person.__init__(self, name, age, gender)
         self.stu_id = stu_id
         self.grade = grade
     def study(self):
@@ -31,4 +31,4 @@ s1.study()
 
 # 类的__mro__属性：用于记录属性和方法的查找顺序
 # 通过实例去查找属性或方法时，会先在实例自身上去查找，如果没有，就按照__mro__记录的顺序去查找
-print(Student.__mro__)
+# print(Student.__mro__)
