@@ -26,18 +26,25 @@ class Person:
     def mask_idcard(idcard):
         return idcard[:6] + '********' + idcard[-4:]
 
+    @staticmethod
+    def create(hobby):
+        return hobby[-2]
+
 
 # 验证一下：静态方法也是保存在类身上的
 # print(Person.__dict__)
+# p1=Person.create('swim')
+# print(p1)
+
 
 # 静态方法需要通过类去调用
-# result = Person.is_adult(2015)
-# print(result)
+result = Person.is_adult(2000)
+print(result)
 # result2 = Person.mask_idcard('212101198802030028')
 # print(result2)
 
 # 注意点：通过实例也能调用到静态方法，但非常不推荐
-p1 = Person('张三', 18, '男')
-res = p1.mask_idcard('212101198802030028')
-print(res)
+# p1 = Person('张三', 18, '男')
+# res = p1.mask_idcard('212101198802030028')
+# print(res)
 

@@ -8,6 +8,10 @@ class Person:
     def speak(self, msg):
         print(f'我叫{self.name}， 年龄是{self.age}， 性别是{self.gender}，我想说：{msg}')
 
+    def study(self):
+        print(f'争取做到{self.grade}年级的第一名')
+
+
 # 定义一个Student类（子类、派生类）， 继承自Person类（父类、超类、基类）
 class Student(Person):
     def __init__(self, name, age, gender, stu_id, grade):
@@ -22,8 +26,8 @@ class Student(Person):
         self.stu_id = stu_id
         self.grade = grade
 
-    def study(self):
-        print(f'我叫{self.name}，我在努力的学习，争取做到{self.grade}年级的第一名')
+    # def study(self):
+    #     print(f'我叫{self.name}，我在努力的学习，争取做到{self.grade}年级的第一名')
 
 # 创建Student类的实例对象
 s1 = Student('李华', 16, '男', '2025001', '初二')
@@ -31,9 +35,16 @@ s1 = Student('李华', 16, '男', '2025001', '初二')
 # print(type(s1))
 
 # 查找speak方法的过程：1.实例自身(s1) => 2.Student类 => 3.Person类
-# s1.speak('你好')
-
-# print(s1.__dict__)
+s1.speak('你好')
+print(s1)
+print(s1.__dict__)
 
 # 查找study方法的过程：1.实例自身(s1) => 2.Student类 => 3.Person类
-# s1.study()
+
+s1.study()
+
+#  定义老师类
+class Teacher(Person):
+    def __init__(self, name, age, gender, teach_id):
+        super().__init__(name, age, gender)
+        self.teach_id = teach_id

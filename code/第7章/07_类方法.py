@@ -5,6 +5,7 @@ class Person:
     # 类属性
     max_age = 120
     planet = '地球'
+    water ='东鹏'
 
     # 初始化方法（给实例添加属性）
     def __init__(self, name, age, gender):
@@ -38,6 +39,21 @@ class Person:
         # 创建并返回一个Person类的实例对象
         return cls(name, age, gender)
 
+    @classmethod
+    def drink(cls,water):
+        # print(water)
+        cls.water = water
+
+
+
+
+# print(Person.__dict__)
+#
+# Person.drink('雪碧')
+# print(Person.__init__)
+
+p1=Person('lisi',18,'女')
+print(p1.__dict__)
 
 # 验证一下：类方法保存在类身上的
 # print(Person.__dict__)
@@ -47,8 +63,8 @@ class Person:
 # print(Person.__dict__)
 
 # 创建Person实例
-p1 = Person('张三', 18, '男')
-p2 = Person('李四', 22, '女')
+# p1 = Person('张三', 18, '男')
+# p2 = Person('李四', 22, '女')
 
 # 验证一下：类属性planet已经修改了
 # print(p1.planet)
@@ -59,5 +75,5 @@ p2 = Person('李四', 22, '女')
 # print(p3.__dict__)
 
 # 注意点：类方法，也能通过实例调用到，但是非常不推荐
-p4 = p1.create('李华-2003-女')
-print(p4.__dict__)
+# p4 = p1.create('李华-2003-女')
+# print(p4.__dict__)
