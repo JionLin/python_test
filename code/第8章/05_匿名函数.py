@@ -38,7 +38,12 @@
 # 3. 冒号右边必须是表达式，且只能写一个表达式。
 # 4. 表达式结果自动作为返回值。
 
-is_adult = lambda age: '成年' if age >= 18 else '未成年'
-print(is_adult(18))
-print(is_adult(13))
+# is_adult = lambda age: '成年' if age >= 18 else '未成年'
+# print(is_adult(18))
+# print(is_adult(13))
 
+
+
+is_aud= lambda  age:'cn' if age>=16 else 'wcn'
+print(is_aud(18))
+print(is_aud(15))

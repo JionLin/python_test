@@ -16,6 +16,8 @@
 #     print('你好啊')
 # welcome.desc = '这是一个打招呼的函数'
 # welcome.version = 1.0
+# welcome.age = 20
+# print(welcome.age)
 # print(welcome.desc)
 # print(welcome.version)
 
@@ -45,15 +47,15 @@
 # print('函数调用后', a, id(a))
 
 # 可变参数
-# a = [10, 20, 30]
-# def welcome(data):
-#     print('data修改前', data, id(data))
-#     data[2] = 99
-#     print('data修改后', data, id(data))
-#
-# print('函数调用前', a, id(a))
-# welcome(a)
-# print('函数调用后', a, id(a))
+a = [10, 20, 30]
+def welcome(data):
+    print('data修改前', data, id(data))
+    data[2] = 99
+    print('data修改后', data, id(data))
+
+print('函数调用前', a, id(a))
+welcome(a)
+print('函数调用后', a, id(a))
 
 
 # 5.函数也可以作为参数
@@ -63,17 +65,18 @@
 # def caller(f):
 #     print('caller函数调用了')
 #     f()
-#
+
 # caller(welcome)
 
+# caller(welcome)
 # 6.函数也可以作为返回值
-def welcome():
-    print('你好啊')
-    def show_msg(msg):
-        print(msg)
-    return show_msg
-
-# result = welcome()
-# result('尚硅谷')
-welcome()('尚硅谷')
+# def welcome():
+#     print('你好啊')
+#     def show_msg(msg):
+#         print(msg)
+#     return show_msg
+#
+# # result = welcome()
+# # result('尚硅谷')
+# welcome()('尚硅谷')
 

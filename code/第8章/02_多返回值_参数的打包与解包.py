@@ -20,7 +20,7 @@
 #     print(args)
 #     print(kwargs)
 #
-# show_info(10, 20, 30, name='张三', age=18, gender='男')
+# show_info(10, 20, 30, 40,name='张三', age=18, gender='男',idcard='11')
 
 
 # 2.解包传递参数
@@ -32,17 +32,18 @@
 #
 # nums = (10, 20, 30)
 # person = {'name':'张三', 'age':18, 'gender':'男'}
-#
+
 # show_info(*nums, **person)
 
+# show_info(*nums, **person)
 
 # 3.打包接收参数 和 解包传递参数 一起使用
-# def show_info(*args, **kwargs):
-#     print(args)
-#     print(kwargs)
+def show_info(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+nums = (10, 20, 30)
+person = {'name':'张三', 'age':18, 'gender':'男'}
 #
-# nums = (10, 20, 30)
-# person = {'name':'张三', 'age':18, 'gender':'男'}
-#
-# show_info(*nums, **person)
+show_info(*nums, **person)
 
