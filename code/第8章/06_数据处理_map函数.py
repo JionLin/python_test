@@ -8,12 +8,22 @@
 # print(list(result))
 # print(nums)
 
+
+# result2=map(lambda y:y*3,nums)
+# print(list(result2))
+# print(nums)
+
 # 字符串转换
 # names = ('python', 'java', 'js')
 # result = map(lambda x: x.upper(), names)
 # print(tuple(result))
 # print(names)
 
+
+names=('ss','sfd')
+up=map(lambda  x:x.upper(),names)
+print(list(up))
+print(names)
 # 类型转换
 # str_number = {'1', '2', '3'}
 # result = map(int, str_number)
@@ -25,9 +35,9 @@
 # 2.返回的是迭代器对象，且一旦遍历完成，就会被“耗尽”。
 # 3.map不会影响元素数量。
 
-nums = [10, 20, 30, 40]
-result = list(map(lambda x: x * 2, nums))
-print(result)
-print(result)
-print(result)
-print(result)
+# nums = [10, 20, 30, 40]
+# result = list(map(lambda x: x * 2, nums))
+# print(result)
+# print(result)
+# print(result)
+# print(result)
