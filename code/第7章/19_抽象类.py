@@ -22,3 +22,11 @@ class Person(MustRun):
 p1 = Person('张三', 18, '男')
 p1.run()
 p1.speak()
+
+
+
+#  抽象类,需要实现
+class Student(ABC):
+    @abstractmethod
+    def study(self):
+        print('好好学习')

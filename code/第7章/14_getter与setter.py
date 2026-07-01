@@ -32,7 +32,35 @@ class Person:
 p1 = Person('张三', 18, '110101199001011234')
 print(p1.name)
 print(p1.age)
+
 p1.age = 25
 print(p1.age)
 print(p1.idcard)
 p1.idcard = '110101199001011456'
+
+
+
+class Student:
+    def __init__(self, name, age, idcard):
+        self.name = name
+        self.age = age
+        self.idcard = idcard
+
+    @property
+    def age(self):
+        return self._age
+
+    @age.setter
+    def age(self, value):
+        if value < Person.max_age:
+            self._age = value
+        else:
+            self._age = Person.max_age
+
+
+stu1=Student('zs',18,'222')
+print(stu1.age)
+
+stu1.age = 30
+
+print(stu1.age)

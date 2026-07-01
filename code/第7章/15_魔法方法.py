@@ -9,7 +9,7 @@ class Person:
 
     # 当执行print(Person的实例对象) 或 str(Person的实例对象) 时调用
     def __str__(self):
-        return f'{self.name}-{self.age}-{self.gender}'
+        return f'{self.name}-{self.age}-{self.name}'
 
     # 当执行len(Person的实例对象) 时调用
     def __len__(self):
@@ -33,11 +33,11 @@ class Person:
 
 p1 = Person('张三', 22, '男')
 p2 = Person('李四', 22, '男')
-# print(p1)
+print(p1)
 # print(p2)
-# res = len(p1)
-# print(res)
+res = len(p1)
+print(res)
 # print(p1 < p2)
 # print(p1 > p2)
 # print(p1 == p2)
-print(p1.address)
+print(p1.aaa)
