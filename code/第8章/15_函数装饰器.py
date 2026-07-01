@@ -10,12 +10,12 @@
 # 3.为了保证参数的兼容性，wrapper 函数要通过 *args 和 **kwargs 接收参数。
 # 4.wrapper 函数中主要做的是：调用原函数（被装饰的函数）、执行其它逻辑，但要记得将原函数的返回值 return 出去。
 
-# def say_hello(func):
-#     def wrapper(*args, **kwargs):
-#         print('你好，我要开始计算了')
-#         return func(*args, **kwargs)
-#     return wrapper
-#
+def say_hello(func):
+    def wrapper(*args, **kwargs):
+        print('你好，我要开始计算了')
+        return func(*args, **kwargs)
+    return wrapper
+
 # @say_hello
 # def add(x, y, z):
 #     res = x + y + z

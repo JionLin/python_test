@@ -21,6 +21,9 @@
 # result = [n * 2 for n in nums]
 # print(result)
 
+# result2 = [i * 2 for i in nums]
+# print(result2)
+
 # 带条件的列表推导式
 # nums = [10, 20, 30, 40]
 # result = [n * 2 for n in nums if n > 20]
@@ -32,12 +35,16 @@
 # result = {names[i]: scores[i] for i in range(len(names))}
 # print(result)
 
-# 集合推导式
-# names = ['张三', '李四', '王五']
-# result = {n + '！' for n in names}
-# print(result)
 
+# result2={names[i]:scores[i] for i in range(len(names))}
+# print(result2)
+
+# 集合推导式
 names = ['张三', '李四', '王五']
-# Python中没有元组推导式，下面这种写法叫：生成器（后面会仔细讲）
-result = (n + '！' for n in names)
+result = {n + '！' for n in names}
 print(result)
+
+# names = ['张三', '李四', '王五']
+# # Python中没有元组推导式，下面这种写法叫：生成器（后面会仔细讲）
+# result = (n + '！' for n in names)
+# print(result)

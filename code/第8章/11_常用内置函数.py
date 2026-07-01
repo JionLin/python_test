@@ -39,9 +39,9 @@ import time
 
 # 三、数学相关
 # abs() =========> 取绝对值
-# print(abs(-9))
-# print(abs(-2.5))
-# print(abs(3 - 5))
+print(abs(-9))
+print(abs(-2.5))
+print(abs(3 - 5))
 
 
 # round() =======> 四舍五入

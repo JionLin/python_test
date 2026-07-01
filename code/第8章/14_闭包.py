@@ -9,6 +9,7 @@
 # outer()
 # outer()
 # outer()
+# outer()
 
 # 前置知识二：
 # 1.在 Python 中，【内层函数】可以访问其【外层函数】作用域中的变量
@@ -31,30 +32,30 @@
 #   1.要有函数嵌套。
 #   2.在【内层函数】中，要访问【外层函数】的变量。
 #   3.并且【外层函数】要返回【内层函数】。———— 只有返回了内层函数，闭包才能“活下来”
-# def outer():
-#     num = 10
-#
-#     def inner():
-#         nonlocal num
-#         num += 1
-#         print(num)
-#
-#     return inner
-#
-# f = outer()
-# f()
-# f()
-# f()
+def outer():
+    num = 10
+
+    def inner():
+        nonlocal num
+        num += 1
+        print(num)
+
+    return inner
+
+f = outer()
+f()
+f()
+f()
 
 # 结论：
 # 1.outer函数中，被inner所使用到的那些变量，会被封存到【闭包单元(cell)】中。
 # 2.这些 cell 会组成一个 __closure__ 元组，最终放在了 inner 函数身上。
 
 # 打印 __closure__ 元组
-# print(f.__closure__)
+print(f.__closure__)
 
 # 打印 __closure__ 元组中的某一项
-# print(f.__closure__[0])
+print(f.__closure__[0])
 
 # 打印 __closure__ 元组中的某一项的具体值
 # print(f.__closure__[0].cell_contents)

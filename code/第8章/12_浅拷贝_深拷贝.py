@@ -9,6 +9,9 @@ import copy
 # nums1 = [10, 20, 30, 40]
 # nums2 = copy.copy(nums1)
 # nums2[3] = 99
+#
+# print(nums1)
+# print(nums2)
 
 # 浅拷贝存在的问题：嵌套数据仍然是共享的，修改嵌套数据会互相影响
 # nums1 = [10, 20, 30, [40, 50]]
@@ -19,9 +22,11 @@ import copy
 # 备注：
 #   1.深拷贝可以彻底消除数据之间的相互影响。
 #   2.深拷贝遇到【不可变对象】不会复制，会直接引用。
-# nums1 = [10, 20, 30, [40, 50]]
-# nums2 = copy.deepcopy(nums1)
-# nums2[3][0] = 99
+nums1 = [10, 20, 30, [40, 50]]
+nums2 = copy.deepcopy(nums1)
+nums2[3][0] = 99
+print(nums1)
+print(nums2)
 
 # 注意点：
 #   1.深拷贝只复制可变对象，不可变对象会直接引用。
