@@ -22,9 +22,17 @@ def say_hello(func):
 #     print(f'{x}和{y}和{z}相加的结果是：{res}')
 #     return res
 
+def add2(x,y,z):
+    res = x + y + z
+    print(f'{x}+{y}+{z}={res}')
+    return res
+
 # 正常调用add函数
 # result = add(10, 20, 30)
 # print(result)
+
+# result2=add2(10, 20, 30)
+# print(result2)
 
 # 需求：在不修改add函数的前提下，给add函数增加一些额外的功能，例如：计算前先打印一句欢迎语。
 # 实现方案：使用装饰器
@@ -79,7 +87,7 @@ def test2(func):
         print('test2追加的逻辑')
         return res
     return wrapper
-
+#
 @test1
 @test2
 def add(x, y):
